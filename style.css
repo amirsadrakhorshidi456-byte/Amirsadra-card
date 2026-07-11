@@ -429,5 +429,20 @@ font-size:15px;
 }
 
 }
+.download-btn{
+display:block;
+margin-top:15px;
+padding:14px;
+background:linear-gradient(45deg,#FFD700,#FFC107);
+color:#111;
+text-decoration:none;
+border-radius:14px;
+font-weight:bold;
+transition:.3s;
+}
 
+.download-btn:hover{
+background:#fff;
+transform:translateY(-3px);
+}
 /* پایان فایل */
