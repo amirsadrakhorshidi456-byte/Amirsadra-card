@@ -93,16 +93,20 @@ function reveal() {
 
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener("load", () => {
 
-window.addEventListener("load", reveal);
+setTimeout(() => {
 
-fetch("https://api.countapi.xyz/hit/amirsadrakhorshidi456-byte/Amirsadra-card")
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("visitor-count").innerText = data.value;
-  })
-  .catch(error => {
-    console.error(error);
-    document.getElementById("visitor-count").innerText = "خطا";
-  });
+const loader = document.getElementById("loader");
+
+loader.style.opacity = "0";
+
+setTimeout(() => {
+
+loader.remove();
+
+},800);
+
+},1800);
+
+});
