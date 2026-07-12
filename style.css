@@ -639,3 +639,30 @@ opacity:.35;
 .social-btn i{
     margin-left:8px;
 }
+
+.social{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-top:25px;
+}
+
+.social-btn{
+    display:block;
+    width:100%;
+    padding:16px;
+    text-align:center;
+    text-decoration:none;
+    background:linear-gradient(45deg,#FFD700,#FFC107);
+    color:#111;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 6px 18px rgba(255,215,0,.35);
+}
+
+.social-btn:hover{
+    background:#fff;
+    transform:translateY(-3px);
+}
