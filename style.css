@@ -597,4 +597,16 @@ animation:appleIntro 1.2s cubic-bezier(.22,1,.36,1);
     transform:translateY(0);
 }
 
+.visitor-counter{
+    margin-top:20px;
+    text-align:center;
+    color:#FFD700;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.visitor-counter i{
+    margin-left:8px;
+}
+
 /* پایان فایل */
