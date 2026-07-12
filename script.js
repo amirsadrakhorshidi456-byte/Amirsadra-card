@@ -40,3 +40,15 @@ function copyLink() {
     navigator.clipboard.writeText("https://amirsadrakhorshidi456-byte.github.io/Amirsadra-card/");
     alert("لینک سایت کپی شد.");
 }
+
+async function shareSite() {
+    if (navigator.share) {
+        await navigator.share({
+            title: "کارت ویزیت امیرصدرا خورشیدی",
+            text: "کارت ویزیت آنلاین من",
+            url: "https://amirsadrakhorshidi456-byte.github.io/Amirsadra-card/"
+        });
+    } else {
+        alert("مرورگر شما از اشتراک‌گذاری پشتیبانی نمی‌کند.");
+    }
+}
