@@ -498,4 +498,63 @@ box-shadow:0 0 25px rgba(255,215,0,.4);
     color:#111;
 }
 
+/* Apple Style Animation */
+
+body{
+    overflow-x:hidden;
+}
+
+@keyframes appleIntro{
+
+0%{
+opacity:0;
+transform:translateY(40px) scale(.96);
+filter:blur(18px);
+}
+
+60%{
+opacity:1;
+transform:translateY(0) scale(1.01);
+filter:blur(0);
+}
+
+100%{
+opacity:1;
+transform:translateY(0) scale(1);
+filter:blur(0);
+}
+
+}
+
+/* Apple Style Animation */
+
+body{
+    overflow-x:hidden;
+}
+
+@keyframes appleIntro{
+
+0%{
+opacity:0;
+transform:translateY(40px) scale(.96);
+filter:blur(18px);
+}
+
+60%{
+opacity:1;
+transform:translateY(0) scale(1.01);
+filter:blur(0);
+}
+
+100%{
+opacity:1;
+transform:translateY(0) scale(1);
+filter:blur(0);
+}
+
+}
+.card{
+animation:appleIntro 1.2s cubic-bezier(.22,1,.36,1);
+}
+
 /* پایان فایل */
