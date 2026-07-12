@@ -560,79 +560,77 @@ animation:appleIntro 1.2s cubic-bezier(.22,1,.36,1);
 /* Apple Style Loader */
 
 #loader{
-    position:fixed;
-    inset:0;
-    width:100%;
-    height:100%;
-    background:#000;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    direction:ltr;
-    z-index:99999;
-    transition:opacity .8s ease;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:opacity .8s;
 }
 
-.loader-text{
-    margin-top:25px;
-    color:#fff;
-    font-size:28px;
-    font-weight:600;
-    text-align:center;
-    direction:ltr;
+.loader-circle{
+width:180px;
+height:180px;
+border-radius:50%;
+background:#111;
+border:5px solid #FFD700;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:
+0 0 20px #FFD700,
+0 0 45px rgba(255,215,0,.7),
+0 0 90px rgba(255,215,0,.3);
+animation:pulse 2s infinite;
 }
 
-/* Scroll Animation */
-
-.reveal{
-    opacity:0;
-    transform:translateY(60px);
-    transition:all .8s cubic-bezier(.22,1,.36,1);
+.loader-circle span{
+font-size:90px;
+font-weight:bold;
+color:#FFD700;
 }
 
-.reveal.active{
-    opacity:1;
-    transform:translateY(0);
+.loader-name{
+margin-top:35px;
+font-size:48px;
+color:#fff;
+font-weight:700;
 }
 
-.visitor-counter{
-    margin-top:20px;
-    text-align:center;
-    color:#FFD700;
-    font-size:18px;
-    font-weight:bold;
+.loader-loading{
+margin-top:20px;
+color:#FFD700;
+font-size:28px;
+letter-spacing:6px;
+animation:blink 1s infinite;
 }
 
-.visitor-counter i{
-    margin-left:8px;
+@keyframes pulse{
+
+0%{
+transform:scale(1);
 }
 
-.social{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    margin-top:20px;
+50%{
+transform:scale(1.06);
 }
 
-.social-btn{
-    display:block;
-    width:100%;
-    padding:18px;
-    background:linear-gradient(45deg,#FFD700,#FFC107);
-    color:#111;
-    text-decoration:none;
-    text-align:center;
-    border-radius:16px;
-    font-size:22px;
-    font-weight:bold;
-    box-shadow:0 8px 20px rgba(255,215,0,.3);
-    transition:.3s;
+100%{
+transform:scale(1);
 }
 
-.social-btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 12px 30px rgba(255,215,0,.5);
 }
-/* پایان فایل */
+
+@keyframes blink{
+
+50%{
+opacity:.35;
+}
+
+}
