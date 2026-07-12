@@ -97,8 +97,12 @@ window.addEventListener("scroll", reveal);
 
 window.addEventListener("load", reveal);
 
-fetch("https://api.countapi.xyz/hit/amirsadra-card/visits")
-.then(response => response.json())
-.then(data => {
+fetch("https://api.countapi.xyz/hit/amirsadrakhorshidi456-byte/Amirsadra-card")
+  .then(response => response.json())
+  .then(data => {
     document.getElementById("visitor-count").innerText = data.value;
-});
+  })
+  .catch(error => {
+    console.error(error);
+    document.getElementById("visitor-count").innerText = "خطا";
+  });
