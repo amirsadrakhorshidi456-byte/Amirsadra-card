@@ -634,3 +634,34 @@ opacity:.35;
 }
 
 }
+.social{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.social-btn{
+    display:block;
+    width:100%;
+    padding:18px;
+    border-radius:18px;
+    background:linear-gradient(45deg,#FFD700,#FFC107);
+    color:#111;
+    text-decoration:none;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(255,215,0,.30);
+    transition:.35s;
+}
+
+.social-btn:hover{
+    background:#fff;
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(255,255,255,.30);
+}
+
+.social-btn i{
+    margin-left:8px;
+}
