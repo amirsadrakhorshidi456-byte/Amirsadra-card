@@ -35,3 +35,8 @@ function changeLanguage() {
     }
 
 }
+
+function copyLink() {
+    navigator.clipboard.writeText("https://amirsadrakhorshidi456-byte.github.io/Amirsadra-card/");
+    alert("لینک سایت کپی شد.");
+}
