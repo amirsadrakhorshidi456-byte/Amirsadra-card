@@ -52,3 +52,21 @@ async function shareSite() {
         alert("مرورگر شما از اشتراک‌گذاری پشتیبانی نمی‌کند.");
     }
 }
+
+window.addEventListener("load",function(){
+
+setTimeout(function(){
+
+const loader=document.getElementById("loader");
+
+loader.style.opacity="0";
+
+setTimeout(function(){
+
+loader.style.display="none";
+
+},800);
+
+},1500);
+
+});
